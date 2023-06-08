@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Geologica:wght@100&family=Roboto+Condensed:ital,wght@0,300;1,300&family=Ubuntu:ital,wght@0,500;1,400&display=swap"
+    rel="stylesheet">
+    <style>
+
+/*works on buttons only*/
+
+#addbtn{
+    display: inline;
+    padding: 2px;
+    width: 20px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+body {
+    font-family: 'Ubuntu';
+    text-align: center;
+    background-color: rgb(242, 227, 252);
+}
+
+.container {
+    align-items: center;
+    width: 400px;
+    margin: auto;
+    border: 3px solid rgb(55, 40, 68);
+    background-color: rgb(144, 140, 213);
+}
+
+h3{
+    text-align: start;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    border: 4px solid rgb(32, 3, 32);
+    background-color:rgb(226, 245, 248) ;
+    width: 200px;
+    margin:10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.enterbar {
+    display:inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 2px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    background-color: rgb(240, 233, 245);
+    border: 2px solid black;
+}
+
+.mylist {
+    text-align: start;
+}
+
+.mylist li {
+    margin-bottom: 4px;
+}
+
+.mylist li span {
+    margin-right: 8px;
+}
+
+
+.mylist li button {
+    background-color: #e85f5f;
+    color: #f9f9f9;
+    text-align: right;
+    padding: 4px;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+.notepad {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+    height:100px;
+    box-sizing: border-box;
+    background-color: rgb(240, 233, 245);
+    border: 2px solid black;
+}
+
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <h2>My To-Do List</h2>
+        <div id="entertask">
+            <input type="text" id="enterbar" class="enterbar" placeholder="Enter a new task here">
+            <button id="addbtn">
+                <b>+</b>
+            </button>
+        </div>
+        <div>
+            <h3>Tasks to finish</h3>
+            <div>
+            <ul type="square" id="mylist" class="mylist">
+            </ul>
+        </div>
+        </div>
+        <div>
+            <h3>Notes</h3>
+            <textarea id="notes" class="notepad" placeholder="Enter notes"></textarea>
+        </div>
+    </div>
+    <script src="list.js">
+    </script>
+</body>
+
+</html>
